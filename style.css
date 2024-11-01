@@ -1,0 +1,289 @@
+header{
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    top: 1px;
+    height: 10vh;
+
+}
+body{
+    background-color: #fff;
+}
+
+#head{
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav{
+    background-color: #fff;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1vh;
+}
+
+#main{
+    width: 100%;
+}
+
+#outdorMuv{
+    width: 100%;
+    height: 6vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20vh;
+}
+
+#outdorPrincipal{
+    background-image: url(img/adidasDiversao.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+}
+
+#nav > img{
+    height: 10vh;
+}
+
+#outdorMuv > img{
+    height: 3.5vh;
+}
+
+#outdorEscrita{
+    display: flex;
+    align-items: center;
+
+}
+
+#outdorEscrita >img{
+    height: 32px;
+   
+}
+
+#navegadores{
+    width: 80%;
+    padding: 1vh;
+    background-color: #fff;
+    height: 10vh;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#navegadores > a{
+    text-decoration: none;
+    color: black;
+}
+
+#saibaMais{
+    background-color: #fff;
+    height: 20vh;
+    width: 100%;
+    text-align: center;
+}
+
+
+#inputNav{
+    color: #AD9D6D;
+    background-color: #fff;
+    border: 2px solid #696042;
+    border-radius: 20px;
+}
+
+#produtosDestaque{
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.produtoDest{
+    height: 80vh;
+    width: 25%;
+    background-color: #2C3033;
+    text-decoration: solid;
+    font-weight: bolder;
+    border-radius: 20px;
+}
+
+#produtoOne{
+    height: 60vh;
+    width: 100%;
+    background-image: url(img/camisetaazulBrancaExercicio.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#produtoSecond{
+    height: 60vh;
+    width: 100%;
+    background-image: url(img/imagemcamisetaagachamento.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#produtoThird{
+    height: 60vh;
+    width: 100%;
+    background-image: url(img/camisetaAzulcomlistrapreta.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.button{
+    border-radius: 10vh;
+    border: none;
+    background-color: #2C3033;
+    height: 6vh;
+    width: 15%;
+    font-size: 3vh;
+    font-weight: bolder;
+    color: #fff;
+}
+
+#videoPromocional{
+    width: 100%;
+    height: 90vh;
+    background-color: #fff;
+   outline: solid 2px #486575;
+   border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#divulgacaoProductOne{
+    background-color: #fff;
+    height: 30vh;
+    width: 100%;
+    text-align: center;
+}
+
+#tenisOutdor{
+    background-color: #fff;
+    width: 100%;
+    height: 160vh;
+    text-align: center;
+}
+
+#tenisOutdor > img{
+    width: 55%;
+    height: 130vh;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px #486575;
+}
+
+#iconsHead, #ancorasHead{
+    display: flex;
+    justify-content: space-between;
+    margin: 4vh;
+
+}
+#iconsHead{
+    width: 5%;
+}
+
+#ancorasHead{
+    width: 50%;
+}
+#headLogo{
+    background-image: url(img/iconLogo.png);
+    width: 6vh;
+    height: 6vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#outdorSecond{
+    width: 100%;
+    height: 150vh;
+    text-align: center;
+}
+
+#outdorSecond > img{
+    width: 70%;
+    height: 110vh;
+    box-shadow: 2px 2px 30px #486575;
+    border-radius: 20px;
+}
+
+#outdorThird{
+    width: 100%;
+    height: 150vh;
+    text-align: center;
+}
+
+#outdorThird > img{
+    width: 70%;
+    height: 110vh;
+    box-shadow: 2px 2px 30px #486575;
+    border-radius: 20px;
+}
+
+#OutdorCarrosel{
+    width: 100%;
+
+}
+.iconesAdidas{
+    width: 22%;
+    box-shadow: 2px 2px 30px #486575;
+    border-radius: 20px;
+    margin: 2.5vh;
+}
+
+#OutdorFourth{
+    width: 100%;
+    text-align: center;
+    text-align: center;
+}
+
+#OutdorFourth > img{
+    width: 95%;
+    box-shadow: 2px 2px 30px #486575;
+    border-radius: 20px;
+}
+
+#OutdorMembers{
+    width: 100%;
+    
+    text-align: center;
+    margin-top: 10vh;
+}
+
+#OutdorMembers > img{
+    width: 35%;
+    box-shadow: 2px 2px 30px #486575;
+    border-radius: 20px;
+    
+}
+
+#outdorDesconto{
+    width: 100%;
+}
+
+#outdorDesconto > img{
+    width: 100%;
+    box-shadow: 2px 2px 30px #486575;
+    border-radius: 20px;
+}
