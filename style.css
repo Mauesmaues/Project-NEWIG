@@ -8,6 +8,9 @@ header{
 }
 body{
     background-color: #fff;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
 }
 
 #head{
@@ -18,6 +21,11 @@ body{
     background-color: #fff;
     align-items: center;
     justify-content: space-between;
+}
+
+.aHead:hover{
+    color: #5f5f5f;
+    cursor: pointer;
 }
 
 #nav{
@@ -31,7 +39,8 @@ body{
 }
 
 #main{
-    width: 100%;
+    width: 80%;
+    margin: auto;
 }
 
 #outdorMuv{
@@ -45,21 +54,39 @@ body{
 }
 
 #outdorPrincipal{
-    background-image: url(img/adidasDiversao.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 70vh;
+    height: auto;
     display: flex;
 }
 
+#outdorPrincipal > img{
+    /* background-image: url(img/adidasDiversao.jpg); */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    /* background-size: cover; */
+    /* width: 100%; */
+    /* height: auto; */
+    /* display: flex; */
+    width: 100%;
+}
+
 #nav > img{
-    height: 10vh;
+    width: 5%;
+}
+
+#nav > img:hover{
+    cursor: pointer;
 }
 
 #outdorMuv > img{
     height: 3.5vh;
+}
+
+#outdorMuv > img:hover{
+    cursor: pointer;
 }
 
 #outdorEscrita{
@@ -87,6 +114,18 @@ body{
 #navegadores > a{
     text-decoration: none;
     color: black;
+}
+
+#navegadores > a:hover{
+    color: #5f5f5f;
+}
+
+#navegadores > img:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 20px #2C3033;
+    background-color: #9b9696;
+    border-radius: 20px;
+
 }
 
 #saibaMais{
@@ -117,7 +156,7 @@ body{
 .produtoDest{
     height: 80vh;
     width: 25%;
-    background-color: #2C3033;
+    background-color: #fff;
     text-decoration: solid;
     font-weight: bolder;
     border-radius: 20px;
@@ -155,21 +194,29 @@ body{
     border: none;
     background-color: #2C3033;
     height: 6vh;
-    width: 15%;
-    font-size: 3vh;
+    width: 25%;
+    font-size: 1vh;
     font-weight: bolder;
     color: #fff;
+    box-shadow: 2px 2px 10px #2C3033;
+    
+}
+
+.button:hover{
+    background-color: #5f5f5f;
+    box-shadow: 2px 2px 10px #486575;
 }
 
 #videoPromocional{
-    width: 100%;
-    height: 90vh;
+    width: 85%;
+    height: 80vh;
     background-color: #fff;
    outline: solid 2px #486575;
    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
 
 #divulgacaoProductOne{
@@ -182,13 +229,11 @@ body{
 #tenisOutdor{
     background-color: #fff;
     width: 100%;
-    height: 160vh;
     text-align: center;
 }
 
 #tenisOutdor > img{
     width: 55%;
-    height: 130vh;
     border-radius: 20px;
     box-shadow: 2px 2px 30px #486575;
 }
@@ -200,11 +245,12 @@ body{
 
 }
 #iconsHead{
-    width: 5%;
+
 }
 
 #ancorasHead{
-    width: 50%;
+    width: 100%;
+    
 }
 #headLogo{
     background-image: url(img/iconLogo.png);
@@ -217,39 +263,36 @@ body{
 
 #outdorSecond{
     width: 100%;
-    height: 150vh;
+    
     text-align: center;
 }
 
 #outdorSecond > img{
     width: 70%;
-    height: 110vh;
     box-shadow: 2px 2px 30px #486575;
     border-radius: 20px;
 }
 
 #outdorThird{
     width: 100%;
-    height: 150vh;
     text-align: center;
 }
 
 #outdorThird > img{
     width: 70%;
-    height: 110vh;
     box-shadow: 2px 2px 30px #486575;
     border-radius: 20px;
 }
 
 #OutdorCarrosel{
     width: 100%;
+    display: flexbox;
 
 }
 .iconesAdidas{
-    width: 22%;
-    box-shadow: 2px 2px 30px #486575;
+    width: 24%;
+    box-shadow: 2px 2px 5px #486575;
     border-radius: 20px;
-    margin: 2.5vh;
 }
 
 #OutdorFourth{
@@ -259,16 +302,15 @@ body{
 }
 
 #OutdorFourth > img{
-    width: 95%;
+    width: 100%;
     box-shadow: 2px 2px 30px #486575;
     border-radius: 20px;
 }
 
 #OutdorMembers{
     width: 100%;
-    
     text-align: center;
-    margin-top: 10vh;
+    
 }
 
 #OutdorMembers > img{
@@ -287,3 +329,33 @@ body{
     box-shadow: 2px 2px 30px #486575;
     border-radius: 20px;
 }
+
+footer{
+    background-color: #2C3033;
+    width: 100%;
+    
+}
+
+#footerLinks{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.footerbox{
+    background-color: #2C3033;
+    width: 20%;
+}
+
+#beforeHr{
+    background-color: #2C3033;
+    width: 100%;
+    text-align: center;
+}
+
+.beforeHRText{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
