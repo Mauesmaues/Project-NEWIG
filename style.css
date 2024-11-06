@@ -267,7 +267,8 @@ body{
 }
 
 #outdorSecond > img{
-    width: 70%;
+    width: 55%;
+    height: 65vh;
     box-shadow: 2px 2px 30px #486575;
     margin-top: 4vh;
 }
@@ -279,7 +280,8 @@ body{
 }
 
 #outdorThird > img{
-    width: 70%;
+    width: 55%;
+    height: 65vh;
     box-shadow: 2px 2px 30px #486575;
     margin-top: 4vh;
 }
@@ -359,6 +361,32 @@ footer{
     display: inline-block;
     vertical-align: top;
 }
+@media(max-width: 2000px){
+    #headerCelular{
+        display: none;
+    }
+
+    #navCelular{
+        display: none;
+    }
+
+    #iconsCelular{
+        display: none;
+    }
+
+    #iconsCelular > img{
+        display: none;
+    }
+
+    #inputPesquisaCelular{
+        display: none;
+    }
+
+    #inputPesquisaCelular > input{
+        display: none;
+    }
+
+}
 
 @media(max-width: 430px){
     .button{
@@ -403,24 +431,26 @@ footer{
     #outdorSecond{
         width: 100%;
         text-align: center; 
-        height: 65vh;
     }
     
     #outdorSecond > img{
         width: 100%;
         box-shadow: 2px 2px 30px #486575;
+        height: 55vh;
+
     }
     
     #outdorThird{
         width: 100%;
         text-align: center;
         margin-top: 4vh;
-        height: 60vh;
+        height: 82vh;
     }
     
     #outdorThird > img{
         width: 100%;
         box-shadow: 2px 2px 30px #486575;
+        height: 55vh;
     }
     
     #OutdorCarrosel{
@@ -442,7 +472,7 @@ footer{
         justify-content: space-around;
         align-items: center;
         font-size: 1.25vh;
-        margin-top: 2px;
+        margin-top: 5px;
     }
 
     header{
@@ -469,14 +499,17 @@ footer{
 
     #iconsCelular{
         width: 14%;
+        display: flex;
     }
 
     #iconsCelular > img{
         width: 100%;
+        display: flex;
     }
 
     #inputPesquisaCelular{
         width: 100%;
+        display: flex;
     }
 
     #inputPesquisaCelular > input{
@@ -486,9 +519,13 @@ footer{
         background-color: #9b9696;
         font-size: 1vh;
         height: 3vh;
+        display: flex;
     }
 
 }
+
+
+/* apagar nav celular no computador */
 
 
 
