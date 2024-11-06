@@ -1,0 +1,90 @@
+#header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 30vh;
+    flex-wrap: wrap;
+}
+
+#header div{
+    background-color: blue;
+    width: 15%;
+}
+
+
+#tableSize{
+    border-collapse: collapse;
+    background-color: rgb(240, 240, 255);
+}
+
+main{
+    text-align: center;
+    width: 100%;
+}
+
+#medidas{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#camisetaPolo{
+    width: 100%;
+}
+
+#camisetaPolo > img{
+    width: 30%;
+}
+
+/* Começo da responsividade por medias queries*/
+
+@media(max-width: 1000px){
+    #header{
+        background-color: #0a2be4;
+        display: flex;
+        justify-content: space-between;
+        height: 65vh;
+        
+    }
+    
+    #header div{
+        background-color: rgb(255, 0, 140);
+        width: 30%;
+        height: 30vh;
+    }
+}
+
+@media(max-width: 700px){
+    #header{
+        background-color: #0a2be4;
+        display: flex;
+        justify-content: space-between;
+        height: 100vh;
+        
+    }
+    
+    #header div{
+        background-color: rgb(255, 0, 140);
+        width: 45%;
+        height: 30vh;
+    }
+}
+
+@media(max-width: 430px){
+    #header{
+        background-color: #0a2be4;
+        display: flex;
+        justify-content: space-between;
+        height: 130vh;
+        
+    }
+    
+    #header div{
+        background-color: rgb(255, 0, 140);
+        width: 100%;
+        height: 20vh;
+    }
+}
+
+
