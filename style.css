@@ -50,7 +50,6 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 20vh;
 }
 
 #outdorPrincipal{
@@ -472,7 +471,7 @@ footer{
         justify-content: space-around;
         align-items: center;
         font-size: 1.25vh;
-        margin-top: 5px;
+        margin-top: 2.5vh;
     }
 
     header{
@@ -483,43 +482,95 @@ footer{
 
     #headerCelular{
         width: 100%;
-        height: 15vh;
+        height: 7vh;
         display: flex;
         justify-content: center;
         align-items: center;
+        
     }
 
     #navCelular{
-        width: 99%;
-        height: 5vh;
+        width: 100%;
+        height: 5.5vh;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
 
     #iconsCelular{
-        width: 14%;
+        width: 10%;
         display: flex;
     }
 
     #iconsCelular > img{
         width: 100%;
         display: flex;
+        background-color: #b4b6b8;
     }
+
+    #IconsCelularSecond {
+
+        width:40%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #IconsCelularSecond > img {
+        width: 15%;
+        height: 3vh;
+    }
+
+    #btnPesquisa{
+        border: none;
+        background-color: #b4b6b8;
+        border-radius: 11px;
+        width: 20%;
+        height: 3vh;
+    }
+
+    #btnPesquisa > img{
+        width: 100%;
+        height: 3vh;
+        box-shadow: 2px 2px 30px #b4b6b8;
+    }
+
+    
 
     #inputPesquisaCelular{
         width: 100%;
         display: flex;
+        margin-top:1vh;
     }
 
     #inputPesquisaCelular > input{
         width: 99%;
         border-radius: 20px;
         border: 2px solid azure;
-        background-color: #9b9696;
+        background-color: #b4b6b8;
         font-size: 1vh;
         height: 3vh;
         display: flex;
+    }
+
+    #OutdorMembers > img{
+        width: 100%;
+    }
+
+    #outdorDesconto, #outdorDesconto > img{
+        height: 24.5vh;
+    }
+
+    footer{
+        margin-top: 10vh;
+    }
+
+    .menuCelular{
+        background-color: #2C3033;
+        width: 70%;
+        height: 100Vh;
+        position: fixed;
+        top: 1px;
+        margin-left: 30%;
     }
 
 }
