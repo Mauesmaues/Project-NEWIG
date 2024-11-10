@@ -571,6 +571,19 @@ footer{
         position: fixed;
         top: 1px;
         margin-left: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        
+    
+    }
+
+    .divUm{
+        background-color: #5c4875;
+        height: 10vh;
+        width: 80%;
+        text-align: center;
     }
 
 }
