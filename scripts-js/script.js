@@ -28,6 +28,13 @@ document.getElementById("btnPesquisa").addEventListener('click', function(){
     pQuatro.innerText = "Fourth"
     divQuatro.appendChild(pQuatro)
     menuCelular.appendChild(divQuatro)
+
+    let divCinco = document.createElement("div")
+    divCinco.classList.add("divUm")
+    let btn = document.createElement("button")
+    btn.innerText = "X"
+    divCinco.appendChild(btn)
+    menuCelular.appendChild(divCinco)
 })
 
 // function menuOnClick() {
