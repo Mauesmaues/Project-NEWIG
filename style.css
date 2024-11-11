@@ -565,7 +565,7 @@ footer{
     }
 
     .menuCelular{
-        background-color: #2C3033;
+        backdrop-filter: blur(30px);
         width: 70%;
         height: 100Vh;
         position: fixed;
@@ -573,25 +573,38 @@ footer{
         margin-left: 30%;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
+        border: 2px solid #2C3033;
         
     
     }
 
     .divUm{
-        background-color: #5c4875;
+        backdrop-filter: blur(40px);
         height: 10vh;
         width: 80%;
         text-align: center;
+        color: #000;
+        font-size: 3vh;
+        font-weight: bolder;
+        border-radius: 20px;
+        box-shadow: 2px 2px 20px #b4b6b8;
     }
 
+
     .divUm > button{
+        backdrop-filter: blur(30px);
+        box-shadow: 0px 0px 0px #fff;
+        border: none;
         width: 90%;
         height: 100%;
-        background-image: url(img/setaparaBaixo.png);
+        font-size: 10vh;
         background-size: cover;
         background-position: center center;
+        border: none
+        
+
     }
 
 }

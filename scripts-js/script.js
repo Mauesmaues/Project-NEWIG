@@ -7,14 +7,14 @@ document.getElementById("btnPesquisa").addEventListener('click', function() {
     divUm.classList.add("divUm");
     let pUm = document.createElement("p");
     pUm.classList.add("pUm");
-    pUm.innerText = "MAIN";
+    pUm.innerText = "Femenino";
     divUm.appendChild(pUm);
     menuCelular.appendChild(divUm);
 
     let divDois = document.createElement("div");
     divDois.classList.add("divUm");
     let pDois = document.createElement("p");
-    pDois.innerText = "Second";
+    pDois.innerText = "Lançamentos";
     pDois.classList.add("pUm");
     divDois.appendChild(pDois);
     menuCelular.appendChild(divDois);
@@ -22,7 +22,7 @@ document.getElementById("btnPesquisa").addEventListener('click', function() {
     let divTres = document.createElement("div");
     divTres.classList.add("divUm");
     let pTres = document.createElement("p");
-    pTres.innerText = "3";
+    pTres.innerText = "Ofertas";
     pTres.classList.add("pUm");
     divTres.appendChild(pTres);
     menuCelular.appendChild(divTres);
@@ -30,10 +30,18 @@ document.getElementById("btnPesquisa").addEventListener('click', function() {
     let divQuatro = document.createElement("div");
     divQuatro.classList.add("divUm");
     let pQuatro = document.createElement("p");
-    pQuatro.innerText = "Fourth";
+    pQuatro.innerText = "Masculino";
     pQuatro.classList.add("pUm");
     divQuatro.appendChild(pQuatro);
     menuCelular.appendChild(divQuatro);
+
+    let divSeis = document.createElement("div");
+    divSeis.classList.add("divUm");
+    let pSeis = document.createElement("p");
+    pSeis.innerText = "Black Friday";
+    pSeis.classList.add("pUm");
+    divSeis.appendChild(pSeis);
+    menuCelular.appendChild(divSeis);
 
     let divCinco = document.createElement("div");
     divCinco.classList.add("divUm");
@@ -42,6 +50,9 @@ document.getElementById("btnPesquisa").addEventListener('click', function() {
     btn.classList.add("buttonRmv");
     divCinco.appendChild(btn);
     menuCelular.appendChild(divCinco);
+
+
+    
 
     // Chama a função para remover a classe "divUm" de todos os elementos quando o botão for clicado
     removerNavMobile(btn, menuCelular);
