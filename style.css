@@ -43,7 +43,7 @@ body{
 }
 
 #main{
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 
@@ -603,6 +603,7 @@ footer{
 
     .divUm > button{
         background-color: transparent;
+        backdrop-filter: blur(60px);
         border: none;
         width: 90%;
         height: 100%;
@@ -610,7 +611,7 @@ footer{
         background-size: cover;
         background-position: center center;
         border: none;
-        box-shadow: 2px 2px 20px #fff;
+        /* box-shadow: 2px 2px 20px #fff; */
 
     }
 

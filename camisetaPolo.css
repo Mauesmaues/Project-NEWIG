@@ -21,6 +21,8 @@
 main{
     text-align: center;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #medidas{
@@ -30,11 +32,49 @@ main{
 }
 
 #camisetaPolo{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    justify-content: space-around;
+}
+#camisetaUm{
+    width: 45%;
+    background-color: blue;
+}
+#camisetaUm > img{
     width: 100%;
 }
 
-#camisetaPolo > img{
-    width: 30%;
+#sectionDois{
+    background-color: #ec3141;
+    width: 40%;
+    height: 110vh;
+}
+
+#sectionTres{
+    background-color: aqua;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#carroselRecomendados{
+    width: 90%;
+    height: 45vh;
+    background-color: #0a2be4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.produtosCarrosel{
+    width: 20%;
+    height: 42vh;
+    background-color: #ec3141;
 }
 
 /* Começo da responsividade por medias queries*/
