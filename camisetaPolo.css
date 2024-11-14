@@ -1,5 +1,5 @@
 #header{
-    background-color: black;
+    background-color: #000;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -35,8 +35,9 @@ main{
     width: 60%;
     display: flex;
     flex-wrap: wrap;
-    background-color: black;
+    background-color: azure;
     justify-content: space-around;
+    height: 200vh;
 }
 #camisetaUm{
     width: 45%;
@@ -49,7 +50,15 @@ main{
 #sectionDois{
     background-color: #ec3141;
     width: 40%;
-    height: 110vh;
+    height: 200vh;
+}
+
+#articleContainPrincipal{
+    border: 2px solid #000;
+    height: 5vh;
+    margin-top: 1vh;
+    display: flex;
+    justify-content: space-between;
 }
 
 #sectionTres{
@@ -77,6 +86,104 @@ main{
     background-color: #ec3141;
 }
 
+#InformacoesCamiseta{
+    background-color: #0a2be4;
+    width: 100%;
+    height: 50vh;
+}
+
+#boxNomeCamiseta{
+    width: 100%;
+    height: 20vh;
+    border: 2px solid #000;
+}
+
+#nomeCamiseta{
+    border: 2px solid #000;
+    width: 90%;
+    height: 18vh;
+}
+
+#miniContain{
+    height: 15vh;
+    border: 2px solid #000;
+    margin-top: 3vh;
+}
+
+#ContainPrincipal{
+    height: 125vh;
+    width: 100%;
+    border: 2px solid #000;
+    margin-top: 3vh;
+}
+
+#containEscolhaMedidas{
+    border: 2px solid #000;
+    margin-top: 1vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tamanho{
+    width: 24%;
+    border: 2px solid #fff;
+    height: 5vh;
+
+}
+
+#containButtons{
+    width: 100%;
+    height: 20vh;
+    margin-top: 1vh;
+    border: 2px solid #000;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.button{
+    border-radius: 10vh;
+    border: none;
+    background-color: #000;
+    height: 6vh;
+    width: 100%;
+    font-size: 2vh;
+    font-weight: bolder;
+    color: #fff;
+    box-shadow: 2px 2px 10px #000;
+}
+
+.button:hover{
+    background-color: #5f5f5f;
+    box-shadow: 2px 2px 10px #486575;
+}
+
+#containLinks{
+    border: 2px solid #000;
+    height: 10vh;
+    width: 100%;
+    margin-top: 1vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#containOff{
+    height: 20vh;
+    border: 2px solid #000;
+    width: 100%;
+    margin-top: 1vh;
+    display: flex;
+}
+
+#containDetalhes{
+    border: 2px solid #000;
+    height: 45vh;
+    width: 100%;
+    margin-top: 2vh;
+    
+}
 /* Começo da responsividade por medias queries*/
 
 @media(max-width: 1000px){
