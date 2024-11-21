@@ -1,14 +1,16 @@
 const root = document.querySelector(':root');
-const main = document.querySelector('main')
+const contain = document.getElementById("containVerMais")
 
 document.getElementById("btnContainVerMais").addEventListener('click', function(){
-    root.style.setProperty("--height-size", "30vh")
-    if(main.dataset.estado == off){
+    let btnTexto = document.getElementById("btnContainVerMais")
+    if(contain.dataset.estado === "off"){
         root.style.setProperty("--height-size", "30vh")
-        main.dataset.estado = "on"
-    }
-    if(main.dataset.estado == on){
+        contain.dataset.estado = "on"
+        btnTexto.innerText = "Ver menos"
+    }else{
         root.style.setProperty("--height-size", "10vh")
-        main.dataset.estado = "off"
+        contain.dataset.estado = "off"
+        btnTexto.innerText = "Ver mais detalhes do produto"
     }
+
 })
