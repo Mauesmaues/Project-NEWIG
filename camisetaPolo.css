@@ -1,10 +1,99 @@
-#header{
-    background-color: #000;
-    display: flex;
-    justify-content: space-between;
+*{
+    font-size: vh;
+}
+header{
     width: 100%;
-    height: 30vh;
-    flex-wrap: wrap;
+    position: fixed;
+    background-color: #fff;
+    top: 1px;
+    height: 10vh;
+
+}
+
+.aHead:hover{
+    color: #5f5f5f;
+    cursor: pointer;
+}
+
+#nav{
+    background-color: #fff;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1vh;
+}
+
+#outdorMuv{
+    width: 100%;
+    height: 6vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 25vh;
+}
+
+#nav > img{
+    width: 5%;
+}
+
+#nav > img:hover{
+    cursor: pointer;
+}
+
+#outdorMuv > img{
+    height: 3.5vh;
+}
+
+#outdorMuv > img:hover{
+    cursor: pointer;
+}
+
+#navegadores{
+    width: 80%;
+    padding: 1vh;
+    background-color: #fff;
+    height: 10vh;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#navegadores > a{
+    text-decoration: none;
+    color: black;
+}
+
+#navegadores > a:hover{
+    color: #5f5f5f;
+}
+
+#navegadores > img:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 20px #2C3033;
+    background-color: #9b9696;
+    border-radius: 20px;
+
+}
+
+#inputNav{
+    color: #AD9D6D;
+    background-color: #fff;
+    border: 2px solid #696042;
+    border-radius: 20px;
+}
+
+#head{
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #header div{
@@ -38,6 +127,7 @@ main{
     background-color: azure;
     justify-content: space-around;
     height: 200vh;
+    margin-top: 5vh;
 }
 #camisetaUm{
     width: 45%;
@@ -48,9 +138,9 @@ main{
 }
 
 #sectionDois{
-    background-color: #ec3141;
     width: 40%;
     height: 200vh;
+    margin-top: 5vh;
 }
 
 #articleContainPrincipal{
@@ -87,29 +177,85 @@ main{
 }
 
 #InformacoesCamiseta{
-    background-color: #0a2be4;
     width: 100%;
-    height: 50vh;
 }
 
 #boxNomeCamiseta{
-    width: 100%;
-    height: 20vh;
+    width: 99%;
     border: 2px solid #000;
+    display: flex;
+    flex-wrap: wrap;
+}
+.estrela{
+ width: 20%;
+}
+.compartilhar{
+    width: 10%;
+    height: 10vh;
+}
+
+#ancoraavaliacoes{
+  margin-left: 10vh;
 }
 
 #nomeCamiseta{
     border: 2px solid #000;
-    width: 90%;
-    height: 18vh;
+    width: 85%;
+    height: 16vh;
+}
+
+#estrelasBox{
+    width: 25%;
+    display: flex;
+    height: 2.5vh;
+}
+
+#informaçoesCompraBox{
+    border: 2px solid #000;
+    width: 99%;
 }
 
 #miniContain{
     height: 15vh;
     border: 2px solid #000;
     margin-top: 3vh;
+    display: flex;
 }
 
+#miniContain > img{
+    margin-right: 1.5vh;
+}
+
+#miniContain > img:hover{
+    border: 2px solid #000;
+    
+}
+
+#containMaisDetalhes{
+    width: 99%;
+    height: var(--height-size);
+    overflow: hidden;
+    font-size: 3vh;
+}
+
+:root{
+    --height-size: 10vh;
+}
+
+#containVerMais{
+    
+    height: 5vh;
+    width: 99%;
+    display: flex;
+    
+}
+
+#containVerMais > button{
+    text-decoration: underline;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
 #ContainPrincipal{
     height: 125vh;
     width: 100%;
@@ -127,7 +273,7 @@ main{
 
 .tamanho{
     width: 24%;
-    border: 2px solid #fff;
+    border: 2px solid #000;
     height: 5vh;
 
 }
