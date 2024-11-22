@@ -366,7 +366,7 @@ footer{
     vertical-align: top;
 }
 
-@media(max-width: 2000px){
+@media(max-width: 10000px){
     #headerCelular{
         display: none;
     }

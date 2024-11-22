@@ -1,12 +1,21 @@
+:root{
+    --cardSecond-height: 0vh;
+    --cardOne-height: 0vh;
+    --cardOne-border: none;
+    --cardSecond-border: none;
+    --height-size: 10vh;
+}
 *{
+
     font-size: vh;
 }
 header{
-    width: 100%;
+    width: 99%;
     position: fixed;
     background-color: #fff;
     top: 1px;
     height: 10vh;
+    
 
 }
 
@@ -17,12 +26,12 @@ header{
 
 #nav{
     background-color: #fff;
-    width: 100%;
+    width:99%;
     border-radius: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 1vh;
+    padding: 1vh;  
 }
 
 #outdorMuv{
@@ -32,7 +41,20 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 25vh;
+    margin-top: 20vh;
+    border-bottom: 2px solid #747171;
+    border-top: 2px solid #747171;
+}
+
+#outdorEscrita{
+    display: flex;
+    align-items: center;
+
+}
+
+#outdorEscrita >img{
+    height: 32px;
+   
 }
 
 #nav > img{
@@ -88,9 +110,8 @@ header{
 
 #head{
     height: 5vh;
-    width: 100%;
+    width: 99%;
     display: flex;
-    
     background-color: #fff;
     align-items: center;
     justify-content: space-between;
@@ -126,12 +147,10 @@ main{
     flex-wrap: wrap;
     background-color: azure;
     justify-content: space-around;
-    height: 200vh;
     margin-top: 5vh;
 }
 #camisetaUm{
     width: 45%;
-    background-color: blue;
 }
 #camisetaUm > img{
     width: 100%;
@@ -139,7 +158,6 @@ main{
 
 #sectionDois{
     width: 40%;
-    height: 200vh;
     margin-top: 5vh;
 }
 
@@ -151,10 +169,9 @@ main{
     justify-content: space-between;
 }
 
-#sectionTres{
-    background-color: aqua;
+#SectionTres{
+    background-color:#000;
     width: 100%;
-    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -238,10 +255,6 @@ main{
     font-size: 3vh;
 }
 
-:root{
-    --height-size: 10vh;
-}
-
 #containVerMais{
     
     height: 5vh;
@@ -257,7 +270,6 @@ main{
     cursor: pointer;
 }
 #ContainPrincipal{
-    height: 125vh;
     width: 100%;
     border: 2px solid #000;
     margin-top: 3vh;
@@ -325,10 +337,151 @@ main{
 
 #containDetalhes{
     border: 2px solid #000;
-    height: 45vh;
     width: 100%;
     margin-top: 2vh;
     
+}
+
+#cardOne{
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    border-top:   2px solid #000;
+    border-bottom: 2px solid #000;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5vh;
+    margin-bottom: 1vh;
+
+}
+
+#cardOne > button {
+    
+    margin-right: 2vh;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    
+}
+
+#cardOne > button > img:hover {
+    box-shadow: 2px 2px 10px #000;
+    border-radius: 50%;
+}
+
+
+#liCor{
+    text-align: left;
+}
+
+#carSecondConteudo{
+    height: var(--cardSecond-height);
+    width: 97%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5vh;
+    border: var(--cardSecond-border);
+    margin-left: 1vh;
+    margin-bottom: 1vh;
+}
+
+#carSecondConteudo > p {
+    width: 100%;
+    text-align: left;
+    margin-left: 2vh ;
+}
+
+#cardOneConteudo{
+    height: var(--cardOne-height);
+    overflow: hidden;
+    width: 97%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5vh;
+    border: var(--cardOne-border);
+    margin-left: 1vh;
+    margin-bottom: 1vh;
+
+}
+
+#cardOneConteudo > p {
+    width: 100%;
+    text-align: left;
+    margin-left: 2vh ;
+}
+
+
+/* Estilização do carrossel */
+#carroselRecomendados {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    justify-content: space-evenly;
+    /* padding: 10px 0; */
+}
+
+/* Container dos itens do carrossel */
+.carrosel-container {
+    display: flex;
+    justify-content: space-between;
+    transition: transform 0.5s ease-in-out;
+    width: 75%;
+}
+
+/* Cada produto no carrossel */
+.produtosCarrosel {
+    width: 24%;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Setas de navegação */
+.seta {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+
+
+
+footer{
+    background-color: #2C3033;
+    width: 100%;
+    color: #fff;
+    
+}
+
+#footerLinks{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.footerbox{
+    background-color: #2C3033;
+    width: 20%;
+}
+
+#beforeHr{
+    background-color: #2C3033;
+    width: 100%;
+    text-align: center;
+}
+
+.beforeHRText{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
 }
 /* Começo da responsividade por medias queries*/
 
