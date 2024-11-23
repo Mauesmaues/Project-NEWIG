@@ -4,6 +4,8 @@
     --cardOne-border: none;
     --cardSecond-border: none;
     --height-size: 10vh;
+    --tabelaMEdidas-position: none;
+    --tabelaMedidas-display:none;
 }
 *{
 
@@ -138,7 +140,26 @@ main{
 #medidas{
     display: flex;
     width: 100%;
+    height: 90vh;
     justify-content: center;
+    display: var(--tabelaMedidas-display);
+    position: var(--tabelaMEdidas-position);
+    top: 5vh;
+}
+
+#fecharTabelaMed{
+    position: var(--tabelaMEdidas-position);
+    display: var(--tabelaMedidas-display);
+    width: 2%;
+    top: 2vh;
+    left: 64.5%;
+    background-color: #ec3141;
+    border: 2px solid #5a1f24;
+    cursor: pointer;
+}
+
+#tabelaDeMedidas{
+    cursor: pointer;
 }
 
 #camisetaPolo{
@@ -170,7 +191,6 @@ main{
 }
 
 #SectionTres{
-    background-color:#000;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -180,7 +200,7 @@ main{
 #carroselRecomendados{
     width: 90%;
     height: 45vh;
-    background-color: #0a2be4;
+
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -439,6 +459,10 @@ main{
     border: 1px solid #ccc;
     border-radius: 10px;
     text-align: center;
+}
+
+.produtosCarrosel > img{
+    width: 100%;
 }
 
 /* Setas de navegação */

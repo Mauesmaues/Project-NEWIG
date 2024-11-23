@@ -49,6 +49,17 @@ document.getElementById("btnCardOne").addEventListener('click', function(){
     
 })
 
+document.getElementById("tabelaDeMedidas").addEventListener("click", function(){
+    const boxMedidas = document.getElementById("medidas");
+    root.style.setProperty("--tabelaMEdidas-position", "fixed")
+    root.style.setProperty("--tabelaMedidas-display", "flex")
+})
+
+document.getElementById("fecharTabelaMed").addEventListener("click", function(){
+    root.style.setProperty("--tabelaMEdidas-position", "none")
+    root.style.setProperty("--tabelaMedidas-display", "none")
+})
+
 
 const container = document.querySelector('.carrosel-container');
 const items = document.querySelectorAll('.produtosCarrosel');
