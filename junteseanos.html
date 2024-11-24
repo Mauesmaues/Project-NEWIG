@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junte-se a Nós - Newig</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="./img/iconNota.png">
+    <script src="scripts-js/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div id="head">
+            <div id="iconsHead"></div>
+            <div id="ancorasHead">
+                <a class="aHead">Acessibilidade</a>|
+                <a class="aHead" href="journal.html">NEWIG Journal</a>|
+                <a class="aHead" href="ajuda.html">Ajuda</a>|
+                <a class="aHead" href="junteseanos.html">Junte-se a nós</a>|
+                <a class="aHead">Entrar</a>
+            </div>
+        </div>
+        <nav id="nav">
+            <img id="logoNewig" src="img/logoUpdateBranco.png" alt="Logo NEWIG">
+            <div id="navegadores">
+                <a href="camisetaPolo.html">Lançamentos</a>
+                <a href="camisetaPolo.html">Ofertas</a>
+                <a href="camisetaPolo.html">SNKRS</a>
+                <input type="text" id="inputNav">
+                <img src="img/coracaoNewig.png" alt="Button Favoritos">
+                <img src="img/cestaicon.png" alt="Carrinho">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Seção de Introdução -->
+        <section id="saibaMais">
+            <h1>Junte-se à nossa jornada</h1>
+            <p>Se você é apaixonado por moda e esportes, temos um lugar para você. Descubra o que podemos construir
+                juntos!</p>
+            <a href="#formulario" class="button">Saiba mais</a>
+        </section>
+
+
+        <!-- Seção de Vídeo Promocional -->
+        <section id="videoPromocional">
+            <video controls>
+                <source src="video/promocional.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </section>
+        <div id="formulario" class="container">
+            <h3 class="text-center">Formulário de Contato</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Seu email">
+                </div>
+                <div class="mb-3">
+                    <label for="mensagem" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva sua mensagem"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-success">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <section id="footerLinks">
+            <div class="footerbox">
+                <h3>Sobre nós</h3>
+                <p>Conheça nossa missão e valores.</p>
+            </div>
+            <div class="footerbox">
+                <h3>Atendimento</h3>
+                <p>Suporte disponível 24/7.</p>
+            </div>
+            <div class="footerbox">
+                <h3>Redes sociais</h3>
+                <p>Conecte-se conosco!</p>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
