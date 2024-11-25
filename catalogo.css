@@ -1,0 +1,357 @@
+:root{
+    --feminino-display: flex;
+    --geral-display: flex;
+}
+body {
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    flex-wrap: wrap;
+}
+
+header {
+	width: 100%;
+	position: fixed;
+	background-color: #fff;
+	top: 1px;
+}
+
+#head {
+	height: 5vh;
+	width: 100%;
+	display: flex;
+
+	background-color: #fff;
+	align-items: center;
+	justify-content: space-between;
+	text-decoration: none;
+}
+
+.aHead:hover {
+	color: #5f5f5f;
+	cursor: pointer;
+}
+a {
+	color: black; /* Define a cor desejada */
+	text-decoration: none; /* Remove o sublinhado */
+}
+
+#nav {
+	background-color: #fff;
+	width: 100%;
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 1vh;
+}
+
+#navegadores {
+	width: 80%;
+	padding: 1vh;
+	background-color: #fff;
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#navegadores > a {
+	text-decoration: none;
+	color: black;
+}
+
+#navegadores > a:hover {
+	color: #5f5f5f;
+}
+
+#navegadores > img:hover {
+	cursor: pointer;
+	box-shadow: 2px 2px 20px #2c3033;
+	background-color: #9b9696;
+	border-radius: 20px;
+}
+
+#nav > img {
+	width: 5%;
+}
+
+#nav > img:hover {
+	cursor: pointer;
+}
+
+#headerCelular {
+    display: none;
+}
+
+#navCelular {
+    display: none;
+}
+
+#iconsCelular {
+    display: none;
+}
+
+#iconsCelular > img {
+    display: none;
+}
+
+#inputPesquisaCelular {
+    display: none;
+}
+
+#inputPesquisaCelular > input {
+    display: none;
+}
+
+#inputNav {
+	color: #ad9d6d;
+	background-color: #fff;
+	border: 2px solid #696042;
+	border-radius: 20px;
+}
+
+#iconsHead,
+#ancorasHead {
+	display: flex;
+	justify-content: space-between;
+	margin: 4vh;
+}
+#iconsHead {
+	width: 5%;
+}
+
+#ancorasHead {
+	width: 80%;
+}
+
+#headLogo {
+	background-image: url(img/iconLogo.png);
+	width: 6vh;
+	height: 6vh;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#outdorMuv {
+	width: 100%;
+	height: 6vh;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 17vh;
+	border-top: 1px solid #747171;
+	border-bottom: 1px solid #747171;
+}
+
+#outdorMuv > img {
+	height: 3.5vh;
+}
+
+#outdorMuv > img:hover {
+	cursor: pointer;
+}
+
+#outdorEscrita {
+	display: flex;
+	align-items: center;
+}
+
+#outdorEscrita > img {
+	height: 32px;
+}
+
+main{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+#filtrosSelecionados{
+    display: flex;
+    width: 100%;
+}
+
+#filtros{
+    width: 24%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #747171;
+    align-items: center;
+    justify-content: center;
+    min-height: 30vh;
+    max-height: 40vh;
+}
+
+#filtros > button{
+    width: 99%;
+    height: 4vh;
+    margin-bottom: 1vh;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+#filtros > button:hover{
+    background-color: #5f5f5f;
+}
+
+#remover{
+    display: none;
+}
+
+#produtos{
+    width: 75%;
+    border: 2px solid #747171;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+
+.produto{
+    width: 30%;
+    display: var(--geral-display);
+    flex-wrap: wrap;
+    margin-bottom: 1vh;
+    
+}
+
+.produto > button {
+    width: 90%;
+    height: 3vh;
+    border-radius: 20px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    box-shadow: 2px 2px 10px #2c3033;
+    cursor: pointer;
+}
+
+.produto > img{
+    width: 100%;
+
+}
+
+.ativo{
+    width: 30%;
+    display: var(--feminino-display);
+}
+
+.ativo > img{
+    width: 100%;
+}
+
+#OutdorCarrosel {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+    margin-bottom: 1vh;
+	
+}
+
+#OutdorCarrosel > h2 {
+	width: 100%;
+}
+
+/* Estilização do carrossel */
+#carroselRecomendados {
+    width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+    /* padding: 10px 0; */
+}
+
+/* Container dos itens do carrossel */
+.carrosel-container {
+    display: flex;
+    justify-content: space-between;
+    transition: transform 0.5s ease-in-out;
+    width: 70%;
+    margin-bottom: 2vh;
+}
+
+/* Cada produto no carrossel */
+.produtosCarrosel {
+    width: 24%;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.produtosCarrosel > button{
+    width: 90%;
+    height: 3vh;
+    border-radius: 20px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    box-shadow: 2px 2px 10px #2c3033;
+    cursor: pointer;
+}
+.produtosCarrosel > img{
+    width: 100%;
+}
+
+/* Setas de navegação */
+.seta {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.valor{
+    width: 99%;
+    display: flex;
+    height: 2vh;
+}
+
+.off{
+    width: 99%;
+    display: flex;
+    color: #55c40b;
+    font-weight: bolder;
+    height: 4vh;
+}
+
+footer {
+	background-color: #2c3033;
+	width: 100%;
+	color: #fff;
+}
+
+#footerLinks {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	text-align: center;
+}
+.footerbox {
+	background-color: #2c3033;
+	width: 20%;
+}
+
+#beforeHr {
+	background-color: #2c3033;
+	width: 100%;
+	text-align: center;
+}
+
+.beforeHRText {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}

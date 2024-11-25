@@ -79,6 +79,36 @@ function removerNavMobile(btn, menuCelular) {
     });
 }
 
+const container = document.querySelector('.carrosel-container');
+const items = document.querySelectorAll('.produtosCarrosel');
+const setaEsquerda = document.getElementById('SetaEsquerdaCarrosel');
+const setaDireita = document.getElementById('SetaDireitaCarrosel');
+
+// Evento para a seta da direita
+setaDireita.addEventListener('click', () => {
+    container.style.transition = "transform 0.5s ease-in-out";
+    container.style.transform = `translateX(-210px)`; // 200px largura + 10px gap
+
+    // Após a transição, reorganiza os itens
+    setTimeout(() => {
+        container.style.transition = "none";
+        container.appendChild(container.firstElementChild); // Move o primeiro item para o final
+        container.style.transform = `translateX(0)`; // Reseta a posição
+    }, 500); // Duração igual à da transição
+});
+
+// Evento para a seta da esquerda
+setaEsquerda.addEventListener('click', () => {
+    container.style.transition = "none";
+    container.insertBefore(container.lastElementChild, container.firstElementChild); // Move o último item para o início
+    container.style.transform = `translateX(-210px)`; // Ajusta a posição inicial
+
+    // Adiciona a animação de transição
+    setTimeout(() => {
+        container.style.transition = "transform 0.5s ease-in-out";
+        container.style.transform = `translateX(0)`; // Volta para a posição original
+    }, 0);
+});
 
 
 
