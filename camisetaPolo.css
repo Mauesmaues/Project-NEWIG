@@ -21,9 +21,13 @@ header{
 
 }
 
-.aHead:hover{
-    color: #5f5f5f;
-    cursor: pointer;
+.aHead:hover {
+	color: #5f5f5f;
+	cursor: pointer;
+}
+.aHead {
+	color: black; /* Define a cor desejada */
+	text-decoration: none; /* Remove o sublinhado */
 }
 
 #nav{
@@ -103,10 +107,16 @@ header{
 #navegadores > a{
     text-decoration: none;
     color: black;
+    font-weight: bolder;
 }
 
 #navegadores > a:hover{
-    color: #5f5f5f;
+    color: #fff;
+    background-color: #000;
+    border-radius: 20px;
+    padding: 1vh;
+    position: relative;
+    box-shadow: 2px 2px 10px #000;
 }
 
 #navegadores > img:hover{
@@ -154,22 +164,25 @@ main{
 #medidas{
     display: flex;
     width: 100%;
-    height: 90vh;
+    height: 70vh;
     justify-content: center;
     display: var(--tabelaMedidas-display);
     position: var(--tabelaMEdidas-position);
-    top: 5vh;
+    top: 19vh;
+    font-size: 2.4vh;
 }
 
 #fecharTabelaMed{
     position: var(--tabelaMEdidas-position);
     display: var(--tabelaMedidas-display);
-    width: 2%;
-    top: 2vh;
-    left: 64.5%;
+    width: 1..2%;
+    top: 16vh;
+    left: 73.4%;
     background-color: #ec3141;
     border: 2px solid #5a1f24;
     cursor: pointer;
+    color: #fff;
+    text-align: center;
 }
 
 #tabelaDeMedidas{
@@ -177,7 +190,7 @@ main{
 }
 
 #camisetaPolo{
-    width: 60%;
+    width: 75%;
     display: flex;
     flex-wrap: wrap;
     background-color: azure;
@@ -191,17 +204,32 @@ main{
     width: 100%;
 }
 
+#camisetaUm > video{
+    width: 100%;
+}
+
 #sectionDois{
-    width: 40%;
+    width: 24%;
     margin-top: 5vh;
 }
 
 #articleContainPrincipal{
-    border: 2px solid #000;
     height: 5vh;
     margin-top: 1vh;
     display: flex;
     justify-content: space-between;
+}
+
+#articleContainPrincipal > button{
+    text-decoration: underline;
+}
+
+#articleContainPrincipal > button:hover{
+    text-decoration: underline;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #9b9696;
+    border-radius: 50px;
 }
 
 #SectionTres{
@@ -217,9 +245,13 @@ main{
 
 #boxNomeCamiseta{
     width: 99%;
-    border: 2px solid #000;
     display: flex;
     flex-wrap: wrap;
+}
+
+#boxNomeCamiseta > img{
+    width: 10%;
+    height: 4vh;
 }
 .estrela{
  width: 20%;
@@ -234,9 +266,10 @@ main{
 }
 
 #nomeCamiseta{
-    border: 2px solid #000;
-    width: 85%;
+    width: 70%;
     height: 16vh;
+    text-align: left;
+    font-size: 2.13vh ;
 }
 
 #estrelasBox{
@@ -246,19 +279,22 @@ main{
 }
 
 #informaçoesCompraBox{
-    border: 2px solid #000;
     width: 99%;
+    color: #469213;
+    text-align: left;
 }
 
 #miniContain{
-    height: 15vh;
-    border: 2px solid #000;
+    height: 10vh;
     margin-top: 3vh;
     display: flex;
+    cursor: pointer;
+    
 }
 
 #miniContain > img{
     margin-right: 1.5vh;
+    border: 1px solid #9b9696;
 }
 
 #miniContain > img:hover{
@@ -270,15 +306,16 @@ main{
     width: 99%;
     height: var(--height-size);
     overflow: hidden;
-    font-size: 3vh;
+    font-size: 2.13vh;
+    text-align: left;
 }
 
 #containVerMais{
-    
+    background-color: #dad8d8;
     height: 5vh;
     width: 99%;
     display: flex;
-    
+    backdrop-filter: blur(30px);
 }
 
 #containVerMais > button{
@@ -289,12 +326,10 @@ main{
 }
 #ContainPrincipal{
     width: 100%;
-    border: 2px solid #000;
-    margin-top: 3vh;
+    margin-top: 1vh;
 }
 
 #containEscolhaMedidas{
-    border: 2px solid #000;
     margin-top: 1vh;
     width: 100%;
     display: flex;
@@ -303,16 +338,17 @@ main{
 
 .tamanho{
     width: 24%;
-    border: 2px solid #000;
+    border: 2px solid #9b9696;
     height: 5vh;
-
+    margin: 1px;
+    cursor: pointer;
+    font-weight: bolder;
 }
 
 #containButtons{
     width: 100%;
     height: 20vh;
     margin-top: 1vh;
-    border: 2px solid #000;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -335,41 +371,45 @@ main{
     box-shadow: 2px 2px 10px #486575;
 }
 
+.button > a{
+	color: #fff;
+    text-decoration: none;
+}
+
+.button > a:hover{
+	color: #000;
+}
 #containLinks{
-    border: 2px solid #000;
-    height: 10vh;
+    height: 5vh;
     width: 100%;
-    margin-top: 1vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 #containOff{
-    height: 20vh;
-    border: 2px solid #000;
+    height: 5vh;
     width: 100%;
-    margin-top: 1vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #containDetalhes{
-    border: 2px solid #000;
     width: 100%;
-    margin-top: 2vh;
-    
 }
 
 #cardOne{
     display: flex;
     justify-content: space-between;
     width: 98%;
-    border-top:   2px solid #000;
-    border-bottom: 2px solid #000;
+    border-top:   2px solid #9b9696;
+    border-bottom: 2px solid #9b9696;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1.5vh;
     margin-bottom: 1vh;
+    font-size: 2.13;
 
 }
 
@@ -396,18 +436,18 @@ main{
     height: var(--cardSecond-height);
     width: 97%;
     overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 1.5vh;
+    font-size: 2vh;
     border: var(--cardSecond-border);
     margin-left: 1vh;
     margin-bottom: 1vh;
+    text-align: left;
+    
 }
 
 #carSecondConteudo > p {
     width: 100%;
     text-align: left;
-    margin-left: 2vh ;
+    margin-left: 1vh ;
 }
 
 #cardOneConteudo{
@@ -416,7 +456,7 @@ main{
     width: 97%;
     display: flex;
     flex-wrap: wrap;
-    font-size: 1.5vh;
+    font-size: 2vh;
     border: var(--cardOne-border);
     margin-left: 1vh;
     margin-bottom: 1vh;
@@ -435,7 +475,10 @@ main{
     display: flex;
     width: 100%;
     overflow: hidden;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2vh;
+    margin-top: 4vh;
     /* padding: 10px 0; */
 }
 
@@ -472,16 +515,6 @@ main{
     color: #fff;
     box-shadow: 2px 2px 10px #2c3033;
 
-}
-
-#carroselRecomendados{
-    width: 90%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 2vh;
-    margin-top: 2vh;
-    
 }
 
 .produtosCarrosel{
@@ -578,19 +611,166 @@ footer{
 }
 
 @media(max-width: 430px){
-    #header{
-        background-color: #0a2be4;
-        display: flex;
-        justify-content: space-between;
-        height: 130vh;
-        
+    #head {
+        display: none;
     }
+        #outdorMuv > img {
+            height: 2.5vh;
+        }
     
-    #header div{
-        background-color: rgb(255, 0, 140);
-        width: 100%;
-        height: 20vh;
-    }
+        #outdorMuv {
+            width: 100%;
+            height: 4vh;
+            background-color: #b4b6b8;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 1.25vh;
+            margin-top: 2.5vh;
+            box-shadow: 2px 2px 10px #2c3033;
+            margin-top: 4.5vh;
+        }
+    
+        header {
+            display: none;
+            position: unset;
+        }
+    
+        #headerCelular {
+            width: 100%;
+            height: 7vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        #navCelular {
+            width: 100%;
+            height: 5.5vh;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    
+        #iconsCelular {
+            width: 10%;
+            display: flex;
+        }
+    
+        #iconsCelular > img {
+            width: 100%;
+            display: flex;
+            background-color: #b4b6b8;
+        }
+    
+        #IconsCelularSecond {
+            width: 40%;
+            display: flex;
+            justify-content: space-around;
+        }
+    
+        #IconsCelularSecond > img {
+            width: 15%;
+            height: 3vh;
+        }
+    
+        #btnPesquisa {
+            border: none;
+            background-color: transparent;
+            border-radius: 11px;
+            width: 30%;
+            height: 3vh;
+        }
+    
+        #btnPesquisa > img {
+            width: 100%;
+            height: 3.7vh;
+            filter: drop-shadow(2px 2px 10px #2c3033);
+        }
+    
+        #inputPesquisaCelular {
+            width: 100%;
+            display: flex;
+            margin-top: 1vh;
+        }
+    
+        #inputPesquisaCelular > input {
+            width: 99%;
+            border-radius: 20px;
+            border: 2px solid #fff;
+            font-size: 1vh;
+            height: 3vh;
+            display: flex;
+            filter: drop-shadow(2px 2px 10px #2c3033);
+        }
+    
+        .menuCelular {
+            backdrop-filter: blur(30px);
+            width: 70%;
+            height: 100vh;
+            position: fixed;
+            top: 1px;
+            margin-left: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            border: 2px solid #2c3033;
+        }
+    
+        .divUm {
+            backdrop-filter: blur(60px);
+            height: 10vh;
+            width: 80%;
+            text-align: center;
+            color: #000;
+            font-size: 3vh;
+            font-weight: bolder;
+            border-radius: 20px;
+            box-shadow: 2px 2px 20px #b4b6b8;
+        }
+    
+        .divUm > button {
+            background-color: transparent;
+            backdrop-filter: blur(60px);
+            border: none;
+            width: 90%;
+            height: 100%;
+            font-size: 10vh;
+            background-size: cover;
+            background-position: center center;
+            border: none;
+            /* box-shadow: 2px 2px 20px #fff; */
+        }
+
+        #camisetaPolo{
+           flex-wrap: wrap;
+            overflow-x: scroll; 
+            width: 100%;
+        }
+
+        #camisetaUm{
+            width: 50%;
+        }
+
+        #sectionDois{
+            width: 100%;
+        }
+
+        /* Container dos itens do carrossel */
+.carrosel-container {
+    width: 90%;
+}
+
+/* Cada produto no carrossel */
+.produtosCarrosel {
+    width: 20%;
+}
+/* Setas de navegação */
+.seta {
+    width: 20px;
+    height: 20px;
+}
 }
 
 
