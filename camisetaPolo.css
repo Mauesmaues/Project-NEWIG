@@ -576,6 +576,10 @@ footer{
     display: inline-block;
     vertical-align: top;
 }
+
+#headerCelular{
+    display: none;
+}
 /* Começo da responsividade por medias queries*/
 
 @media(max-width: 1000px){
@@ -611,9 +615,9 @@ footer{
 }
 
 @media(max-width: 430px){
-    #head {
-        display: none;
-    }
+        #head {
+            display: none;
+        }
         #outdorMuv > img {
             height: 2.5vh;
         }
@@ -758,19 +762,21 @@ footer{
         }
 
         /* Container dos itens do carrossel */
-.carrosel-container {
-    width: 90%;
-}
+        .carrosel-container {
+            width: 90%;
+            flex-wrap: wrap;
+        }
 
-/* Cada produto no carrossel */
-.produtosCarrosel {
-    width: 20%;
-}
-/* Setas de navegação */
-.seta {
-    width: 20px;
-    height: 20px;
-}
+        /* Cada produto no carrossel */
+        .produtosCarrosel {
+            width: 50%;
+            margin-top: 2vh;
+        }
+        /* Setas de navegação */
+        .seta {
+            width: 20px;
+            height: 20px;
+        }
 }
 
 

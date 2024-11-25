@@ -1,6 +1,7 @@
 :root{
     --feminino-display: flex;
     --geral-display: flex;
+    --filtroMobile-display: none;
 }
 body {
 	background-color: #fff;
@@ -181,6 +182,10 @@ main{
 #filtrosSelecionados{
     display: flex;
     width: 100%;
+}
+
+#BoxFiltro{
+    display: none;
 }
 
 #filtros{
@@ -366,10 +371,11 @@ footer {
 	vertical-align: top;
 }
 
+#filtrosCelular{
+    display: none;
+}
+
 @media(max-width: 420px){
-    #filtros{
-        display: none;
-    }
      main{
         width: 100%;
      }
@@ -391,11 +397,13 @@ footer {
 /* Container dos itens do carrossel */
 .carrosel-container {
     width: 90%;
+    flex-wrap: wrap;
 }
 
 /* Cada produto no carrossel */
 .produtosCarrosel {
-    width: 20%;
+    width: 50%;
+    margin-top: 2vh;
 }
 /* Setas de navegação */
 .seta {
@@ -534,4 +542,54 @@ footer {
 		border: none;
 		/* box-shadow: 2px 2px 20px #fff; */
 	}
+
+    #filtrosSelecionados{
+        width: 80%;
+    }
+
+    #BoxFiltro{
+        display: block;
+        width: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #BoxFiltro > button{
+        border: none;
+    }
+
+    #BoxFiltro > button:hover{
+        border: 2px solid #000;
+    }
+
+    #filtros{
+        width: 99%;
+        display: var(--filtroMobile-display);
+        flex-wrap: wrap;
+        position: fixed;
+        height: 80vh;
+        top: 10vh;
+        left: 1px;
+        background-color: #747171;
+        text-align: left;
+    }
+
+    #filtros > p{
+        width: 90%;
+    }
+
+    #fecharFiltroMobile{
+        background-color: crimson;
+        width: 9%;
+        border: 1px solid #fff;
+    }
+
+    #fecharFiltroMobile > button{
+        width: 100%;
+        background-color: crimson;
+        color: #fff;
+        text-align: center;
+        
+    }
 }

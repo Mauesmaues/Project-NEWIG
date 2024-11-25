@@ -29,6 +29,15 @@ document.getElementById("filtroFeminino").addEventListener("click", function() {
     }
 });
 
+
+
+document.getElementById("btnfiltroMobile").addEventListener("click", function(){
+    root.style.setProperty("--filtroMobile-display", "flex");
+})
+
+document.getElementById("btnFecharFiltroMobile").addEventListener("click", function(){
+    root.style.setProperty("--filtroMobile-display", "none")
+})
 document.getElementById("filtroMasculino").addEventListener("click", function() {
     const p = filtro.querySelector('p');
     const btn = document.getElementById("filtroMasculino")
@@ -139,10 +148,6 @@ document.getElementById("btnPesquisa").addEventListener('click', function() {
     btn.classList.add("buttonRmv");
     divCinco.appendChild(btn);
     menuCelular.appendChild(divCinco);
-
-
-    
-
     // Chama a função para remover a classe "divUm" de todos os elementos quando o botão for clicado
     removerNavMobile(btn, menuCelular);
 });
