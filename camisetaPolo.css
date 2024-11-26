@@ -63,11 +63,11 @@ header{
    
 }
 
-#nav > img{
-    width: 5%;
+#nav > a > img{
+    width: 20%;
 }
 
-#nav > img:hover{
+#nav > a >img:hover{
     cursor: pointer;
 }
 
