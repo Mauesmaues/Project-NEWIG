@@ -295,10 +295,17 @@ body {
 	width: 99%;
 	text-align: center;
 	margin-top: 4vh;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 #tenisOutdor > video {
 	width: 55%;
+}
+
+#tenisOutdor > h3, p{
+	width: 100%;
 }
 
 #iconsHead,
@@ -327,6 +334,9 @@ body {
 	width: 100%;
 	margin-top: 2vh;
 	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
 #outdorSecond > img {
@@ -335,16 +345,28 @@ body {
 	margin-top: 2vh;
 }
 
+#outdorSecond > p, h3{
+	width: 100%;
+	
+}
+
 #outdorThird {
 	width: 100%;
 	text-align: center;
 	margin-top: 2vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 #outdorThird > img {
 	width: 55%;
 	box-shadow: 2px 2px 30px #486575;
 	margin-top: 4vh;
+}
+
+#outdorThird > p, h3{
+	width: 100%;
 }
 
 #OutdorCarrosel {
@@ -434,6 +456,9 @@ body {
 	text-align: center;
 	text-align: center;
 	margin-top: 4vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 #OutdorFourth > img {
@@ -466,6 +491,7 @@ footer {
 	background-color: #2c3033;
 	width: 100%;
 	color: #fff;
+	margin-top: 2vh;
 }
 
 #footerLinks {
@@ -476,7 +502,13 @@ footer {
 }
 .footerbox {
 	background-color: #2c3033;
-	width: 20%;
+	width: 40%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footerbox > a, p{
+	width: 100%;
 }
 
 #beforeHr {
@@ -678,7 +710,7 @@ footer {
 	}
 }
 
-@media (max-width: 430px) {
+@media (max-width: 1000px) {
 	.button {
 		border: none;
 		background-color: #2c3033;
@@ -768,7 +800,7 @@ footer {
 		font-size: 1.25vh;
 		margin-top: 2.5vh;
 		box-shadow: 2px 2px 10px #2c3033;
-		margin-top: 4.5vh;
+		margin-top: 2vh;
 	}
 
 	header {
@@ -778,7 +810,6 @@ footer {
 
 	#headerCelular {
 		width: 100%;
-		height: 7vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -786,7 +817,6 @@ footer {
 
 	#navCelular {
 		width: 100%;
-		height: 5.5vh;
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
@@ -858,44 +888,47 @@ footer {
 	}
 
 	.menuCelular {
-		backdrop-filter: blur(30px);
+		background-color: #000;
 		width: 70%;
-		height: 100vh;
+		height: 95vh;
 		position: fixed;
 		top: 1px;
 		margin-left: 30%;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-evenly;
-		align-items: center;
+		justify-content: center;
 		border: 2px solid #2c3033;
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px;
 	}
 
 	.divUm {
-		backdrop-filter: blur(60px);
+		background-color: #2c3033;
 		height: 10vh;
-		width: 80%;
-		text-align: center;
-		color: #000;
-		font-size: 3vh;
+		width: 100%;
+		color: #fff;
+		font-size: 2.13vh;
 		font-weight: bolder;
-		border-radius: 20px;
 		box-shadow: 2px 2px 20px #b4b6b8;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
 	}
 
 	.divUm > button {
 		background-color: transparent;
 		backdrop-filter: blur(60px);
 		border: none;
+		font-size: 2.13vh;
+		height: 10vh;
 		width: 90%;
-		height: 100%;
-		font-size: 10vh;
 		background-size: cover;
 		background-position: center center;
 		border: none;
+		color: #fff;
 		/* box-shadow: 2px 2px 20px #fff; */
 	}
-
 	#divulgacaoProductOne{
 		width: 100%;
 		display: flex;
@@ -948,6 +981,37 @@ footer {
 	.seta {
 		width: 20px;
 		height: 20px;
+	}
+
+	footer {
+		background-color: #2c3033;
+		width: 100%;
+		color: #fff;
+		margin-top: 2vh;
+		margin-bottom: 2vh;
+	}
+	
+	#footerLinks {
+		flex-wrap: wrap;
+	}
+	.footerbox {
+		width: 100%;
+	}
+	
+	.footerbox > a, p{
+		width: 100%;
+	}
+	
+	#beforeHr {
+		display: flex;
+		width: 100%;
+		flex-wrap: wrap;
+	}
+	
+	.beforeHRText {
+		width: 100%;
+		display: inline-block;
+		vertical-align: top;
 	}
 }
 

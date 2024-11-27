@@ -553,34 +553,40 @@ main{
 
 
 
-footer{
-    background-color: #2C3033;
-    width: 100%;
-    color: #fff;
-    
+footer {
+	background-color: #2c3033;
+	width: 100%;
+	color: #fff;
+	margin-top: 2vh;
 }
 
-#footerLinks{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    text-align: center;
+#footerLinks {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	text-align: center;
 }
-.footerbox{
-    background-color: #2C3033;
-    width: 20%;
-}
-
-#beforeHr{
-    background-color: #2C3033;
-    width: 100%;
-    text-align: center;
+.footerbox {
+	background-color: #2c3033;
+	width: 40%;
+	display: flex;
+	flex-wrap: wrap;
 }
 
-.beforeHRText{
-    width: 40%;
-    display: inline-block;
-    vertical-align: top;
+.footerbox > a, p{
+	width: 100%;
+}
+
+#beforeHr {
+	background-color: #2c3033;
+	width: 100%;
+	text-align: center;
+}
+
+.beforeHRText {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
 }
 
 #headerCelular{
@@ -620,7 +626,7 @@ footer{
     }
 }
 
-@media(max-width: 900px){
+@media(max-width: 1000px){
         #head {
             display: none;
         }
@@ -638,17 +644,11 @@ footer{
             font-size: 1.25vh;
             margin-top: 2.5vh;
             box-shadow: 2px 2px 10px #2c3033;
-            margin-top: 4.5vh;
-        }
-    
-        header {
-            display: none;
-            position: unset;
+            margin-top: 2vh;
         }
     
         #headerCelular {
             width: 100%;
-            height: 7vh;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -656,7 +656,6 @@ footer{
     
         #navCelular {
             width: 100%;
-            height: 5.5vh;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
@@ -713,7 +712,10 @@ footer{
             display: flex;
             filter: drop-shadow(2px 2px 10px #2c3033);
         }
-    
+        
+        header{
+            display: none;
+        }
         .menuCelular {
             background-color: #000;
             width: 70%;
@@ -740,6 +742,7 @@ footer{
             display: flex;
             justify-content: center;
             align-items: center;
+            text-align: center;
         }
     
         .divUm > button {
@@ -793,11 +796,8 @@ footer{
         word-wrap: break-word;
         align-items: center;
         width: 100%;
-        justify-content: left;
-        }
-
-        .circ{
-            height: auto;
+        justify-content: center;
+        flex-wrap: wrap;
         }
 
         table{
@@ -805,18 +805,50 @@ footer{
             overflow-x: auto;
             margin: 0 auto;
             font-size: 4vw;
-            margin-right: 2vh;
+            height: 30vh;
         }
 
         #fecharTabelaMed{
-            width: 5%;
+            width: 67.8%;
             margin-bottom: 0.5vh;
             border: 1px solid #9b9696;
             margin-left: 0.7vh;
+            display: var(--tabelaMedidas-display);
         }
 
         th, td {
         padding: 8px;
+        }
+
+        footer {
+            background-color: #2c3033;
+            width: 100%;
+            color: #fff;
+            margin-top: 2vh;
+            margin-bottom: 2vh;
+        }
+        
+        #footerLinks {
+            flex-wrap: wrap;
+        }
+        .footerbox {
+            width: 100%;
+        }
+        
+        .footerbox > a, p{
+            width: 100%;
+        }
+        
+        #beforeHr {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        
+        .beforeHRText {
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
         }
 }
 
