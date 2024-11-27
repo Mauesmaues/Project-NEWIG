@@ -598,6 +598,16 @@ footer {
 #headerCelular{
     display: none;
 }
+
+#outdorEscrita > p > a{
+    color: #000;
+
+}
+
+#outdorEscrita > p > a:hover{
+    color: #555;
+
+}
 /* Começo da responsividade por medias queries*/
 
 @media(max-width: 1000px){
@@ -872,6 +882,16 @@ footer {
     
         .divUm:hover{
             color: #000;
+        }
+
+        #outdorEscrita > p > a{
+            color: #000;
+        
+        }
+        
+        #outdorEscrita > p > a:hover{
+            color: #555;
+        
         }
 }
 

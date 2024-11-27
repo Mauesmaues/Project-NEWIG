@@ -655,6 +655,16 @@ form{
 	background-color: #218838;
 }
 
+#outdorEscrita > p > a{
+	color: #000;
+
+}
+
+#outdorEscrita > p > a:hover{
+	color: #555;
+
+}
+
 /*estilo pagina de trabalhe*/
 
 @media (max-width: 10000px) {
@@ -1072,6 +1082,10 @@ form{
 		}
 	
 		.divUm:hover{
+			color: #000;
+		}
+
+		#outdorEscrita > p > a{
 			color: #000;
 		}
 }

@@ -409,6 +409,16 @@ footer {
     display: none;
 }
 
+#outdorEscrita > p > a{
+	color: #000;
+
+}
+
+#outdorEscrita > p > a:hover{
+	color: #555;
+
+}
+
 @media(max-width: 1000px){
 	header{
 		display: none;
@@ -676,5 +686,14 @@ footer {
 		font-size: 1.5vh;
 	}
 
+	#outdorEscrita > p > a{
+		color: #000;
+	
+	}
+	
+	#outdorEscrita > p > a:hover{
+		color: #555;
+	
+	}
 	
 }
