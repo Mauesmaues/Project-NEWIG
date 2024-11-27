@@ -573,8 +573,14 @@ footer {
 	flex-wrap: wrap;
 }
 
-.footerbox > a, p{
+.footerbox > a{
 	width: 100%;
+	text-decoration: none;
+	color: #fff;
+}
+
+.footerbox > a:hover{
+	color: #555;
 }
 
 #beforeHr {
@@ -857,6 +863,15 @@ footer {
 
         #outdorEscrita > p{
             font-size: 1.5vh;
+        }
+
+        .divUm > a{
+            color: #fff;
+            text-decoration: none;
+        }
+    
+        .divUm:hover{
+            color: #000;
         }
 }
 

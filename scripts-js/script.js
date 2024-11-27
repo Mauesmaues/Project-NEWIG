@@ -5,40 +5,45 @@ document.getElementById("btnPesquisa").addEventListener('click', function() {
     // Criando os elementos dinamicamente
     let divUm = document.createElement("div");
     divUm.classList.add("divUm");
-    let pUm = document.createElement("p");
+    let pUm = document.createElement("a");
     pUm.classList.add("pUm");
-    pUm.innerText = "Femenino";
+    pUm.href = "index.html";
+    pUm.innerText = "Home";
     divUm.appendChild(pUm);
     menuCelular.appendChild(divUm);
 
     let divDois = document.createElement("div");
     divDois.classList.add("divUm");
-    let pDois = document.createElement("p");
-    pDois.innerText = "Lançamentos";
+    let pDois = document.createElement("a");
+    pDois.href = "catalogo.html"
+    pDois.innerText = "Catalogo";
     pDois.classList.add("pUm");
     divDois.appendChild(pDois);
     menuCelular.appendChild(divDois);
 
     let divTres = document.createElement("div");
     divTres.classList.add("divUm");
-    let pTres = document.createElement("p");
-    pTres.innerText = "Ofertas";
+    let pTres = document.createElement("a");
+    pTres.href = "junteseanos.html";
+    pTres.innerText = "Junte-se a nós";
     pTres.classList.add("pUm");
     divTres.appendChild(pTres);
     menuCelular.appendChild(divTres);
 
     let divQuatro = document.createElement("div");
     divQuatro.classList.add("divUm");
-    let pQuatro = document.createElement("p");
-    pQuatro.innerText = "Masculino";
+    let pQuatro = document.createElement("a");
+    pQuatro.href = "journal.html"
+    pQuatro.innerText = "NEWIG Journal";
     pQuatro.classList.add("pUm");
     divQuatro.appendChild(pQuatro);
     menuCelular.appendChild(divQuatro);
 
     let divSeis = document.createElement("div");
     divSeis.classList.add("divUm");
-    let pSeis = document.createElement("p");
-    pSeis.innerText = "Black Friday";
+    let pSeis = document.createElement("a");
+    pSeis.href = "ajuda.html"
+    pSeis.innerText = "Ajuda";
     pSeis.classList.add("pUm");
     divSeis.appendChild(pSeis);
     menuCelular.appendChild(divSeis);
@@ -50,10 +55,6 @@ document.getElementById("btnPesquisa").addEventListener('click', function() {
     btn.classList.add("buttonRmv");
     divCinco.appendChild(btn);
     menuCelular.appendChild(divCinco);
-
-
-    
-
     // Chama a função para remover a classe "divUm" de todos os elementos quando o botão for clicado
     removerNavMobile(btn, menuCelular);
 });
