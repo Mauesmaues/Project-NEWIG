@@ -42,7 +42,7 @@ header{
 
 #outdorMuv{
     width: 100%;
-    height: 6vh;
+    height: auto;
     background-color: #fff;
     display: flex;
     justify-content: space-around;
@@ -636,7 +636,7 @@ footer {
     
         #outdorMuv {
             width: 100%;
-            height: 4vh;
+            height: auto;
             background-color: #b4b6b8;
             display: flex;
             justify-content: space-around;
@@ -831,12 +831,16 @@ footer {
         #footerLinks {
             flex-wrap: wrap;
         }
-        .footerbox {
+        .footerbox > a{
             width: 100%;
+            text-decoration: none;
+            color: #fff;
+            margin-top: 1vh;
+            font-size: 2.5vh;
         }
-        
-        .footerbox > a, p{
-            width: 100%;
+    
+        .footerbox > a:hover{
+            color: #555;
         }
         
         #beforeHr {
@@ -849,6 +853,10 @@ footer {
             width: 100%;
             display: inline-block;
             vertical-align: top;
+        }
+
+        #outdorEscrita > p{
+            font-size: 1.5vh;
         }
 }
 
